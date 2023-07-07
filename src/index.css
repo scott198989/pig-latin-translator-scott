@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.title {
+  font-family: 'Jazz LET', fantasy;
+  font-weight: bold;
+  color: rgb(212, 6, 249);
+  font-size: 80px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 1px 5px 10px 15px rgb(0, 0, 0);
+  animation: dance 2s infinite;
+}
+
+@keyframes dance {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-20px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: linear-gradient(#00e5ff, #b400fb);
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.input-section {
+  border: 2px solid rgb(100, 99, 99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(#00e5ff, #b400fb);
+  animation: animate 8s linear infinite;
+  box-shadow: 1px 5px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.user-input {
+  border: 0;
+  padding: 1;
+  outline: 5px solid #e9e9e9;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 5px 10px 15px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: rgb(231, 7, 247);
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(212, 6, 249);
+  font-size: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.footer {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  height: 100px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.phrase {
+  .walking-pig-container {
+    position: fixed;
+    bottom: 1;
+    left: calc(50% - 50px);
+    transform: translateX(calc(-50% + 50px));
+    animation: walk 5s linear infinite;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+  }
+
+  @keyframes walk {
+    0% {
+      left: calc(100vw - 100px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  .butcher-pig-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    mix-blend-mode: screen;
+    animation: wiggle 0.5s ease-in-out infinite;
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  font-size: large;
+  font-family: 'Jazz LET', fantasy;
+  font-weight: bold;
+  color: rgb(251, 251, 251);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.butcher-pig-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  mix-blend-mode: screen;
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
