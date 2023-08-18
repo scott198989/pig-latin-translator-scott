@@ -10,3 +10,29 @@ If that condition is not met, we will else if and iterate over the entire vowels
 If none of those conditions are met our catch all will be to move the first consonants to the end of the word and add "ay" by using the .indexOf to find the first letter at the zero index, slicing the word into seperate strings, slicing the index, and adding the suffix and prefix and adding the "ay".  
 
 One big else if statement.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+STUDENT NOTES ABOVE
+
+## Introduction
+
+This is a pig latin translator.  This app uses state to modify and update a user inputted word and translate it into pig latin.  This was one of the first projects we did in class at LEARN Academy.
+
+## Features
+
+A user can enter a word and upon clicking submit the word or phrase would be translated into pig latin
+
+## Dependencies
+
+If using homebrew:
+
+brew update
+
+brew install yarn
+
+## Contact
+
+Thank you for checking out my first major class project!  If you would like to connect on linkedin you can do so at https://www.linkedin/in/scott-tuschl or if you would like to drop me a line, or check out some of the other projects I have done, you can do so by visiting my portfolio site at https://www.scott-tuschl.com
+
+Thank you!
