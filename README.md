@@ -11,28 +11,59 @@ If none of those conditions are met our catch all will be to move the first cons
 
 One big else if statement.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 STUDENT NOTES ABOVE
 
+![Pig Latin Translator Screenshot](https://github.com/scott198989/pig-latin-translator-scott/blob/main/Piglatin-screenshot.png)
+
+# Pig Latin Translator 🐷
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [How it Works](#how-it-works)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Contact](#contact)
+
 ## Introduction
 
-This is a pig latin translator.  This app uses state to modify and update a user inputted word and translate it into pig latin.  This was one of the first projects we did in class at LEARN Academy.
+Ever wanted to speak Pig Latin but didn't want to do the mental gymnastics? Well, here's your solution. This Pig Latin Translator was one of the first projects I tackled at LEARN Academy, and it uses React state to translate words or phrases into Pig Latin.
+
+## How it Works
+
+Under the hood, the app segments each word into a prefix, suffix, and index. Then, based on a series of conditions like whether the word contains vowels or certain consonants, it rearranges the word according to Pig Latin rules. It's basically one big `else-if` statement taking care of all the logic. Want to know more? Check out the code!
 
 ## Features
 
-A user can enter a word and upon clicking submit the word or phrase would be translated into pig latin
-
+- Translate a single word or a whole phrase into Pig Latin
+- Instant translation after you hit 'Submit'
+  
 ## Dependencies
 
-If using homebrew:
+**Software Needed**
 
-brew update
+- [Homebrew](https://brew.sh/)
+- [Yarn](https://yarnpkg.com/)
 
-brew install yarn
+## Installation
+
+1. Update Homebrew:
+    ```bash
+    brew update
+    ```
+2. Install Yarn:
+    ```bash
+    brew install yarn
+    ```
+3. Run Locally
+   ```bash
+   yarn
+   yarn start
+   ```
 
 ## Contact
 
-Thank you for checking out my first major class project!  If you would like to connect on linkedin you can do so by clicking my linkedin on my GitHub profile page, or if you would like to drop me a line, or check out some of the other projects I have done, you can do so by visiting my portfolio site at https://www.scott-tuschl.com
-
-Thank you!
+If you dig this project or just want to say hi, feel free to hit me up on [LinkedIn](https://www.linkedin.com/in/scott-tuschl). You can also find more of my work at my [portfolio site](https://www.scott-tuschl.com).
